@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,13 +63,43 @@
             font-weight: 600;
             margin-top: 1rem;
         }
+
+        .log-section {
+            margin-top: 2rem;
+            text-align: left;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1rem;
+        }
+
+        .log-item {
+            font-size: 0.9rem;
+            color: #475569;
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .log-item::before {
+            content: "📝";
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Hola Mundo!</h1>
         <p>Esta es una página de prueba para practicar commits y push en GitHub.</p>
-        <div class="status-badge">Versión 1.0</div>
+        <div class="status-badge">Versión 1.1</div>
+
+        <div class="log-section">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-color);">Bitácora de Cambios</h3>
+            <div class="log-item">Segundo commit</div>
+        </div>
     </div>
 </body>
+
 </html>
